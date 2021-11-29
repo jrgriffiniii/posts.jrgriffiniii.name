@@ -19,7 +19,7 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            github
           }
         }
       }
@@ -42,15 +42,22 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
-      )}
+      <div className="author">
+        <div className="author-name">
+          {author?.name && (
+            <strong>
+              <a href="https://github.com/jrgriffiniii">{ author.name }</a>
+            </strong>
+          )}
+        </div>
+        <div className="author-summary">
+          {author?.summary && (
+            <p>
+              {author?.summary}
+            </p>
+          )}
+        </div>
+      </div>
     </div>
   )
 }
