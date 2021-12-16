@@ -340,8 +340,9 @@ html {
 
 body {
   height: inherit;
-  background-color: #0d2a35;
   color: #ffffff;
+
+  background-color: #0d2a35;
 }
 
 a {
@@ -366,6 +367,8 @@ h1 {
 
   display: flex;
   flex-direction: column;
+
+  background-color: #0d2a35;
 }
 
 /* Modules */
@@ -377,6 +380,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.footer .gatsby-image-wrapper {
+  border-radius: 100%;
 }
 
 /* Heading */
@@ -407,6 +414,28 @@ h1 {
 /* Home */
 main > .bio {
   justify-content: center;
+}
+
+main .site-links {
+  list-style: none;
+  text-align: center;
+}
+
+main .site-links .site-links__link {
+  display: inline-block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: x-large;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin-left: 0.45rem;
+  margin-right: 0.45rem;
+}
+
+main .site-links .site-links__link a {
+  text-decoration: none;
+  color: #0d2a35;
+  font-weight: 900;
 }
 
 .post-list-item h2 {
