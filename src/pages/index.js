@@ -27,6 +27,17 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
+      <ul className="site-links">
+        <li className="site-links__link">
+          <a href="https://jrgriffiniii.wordpress.com/">Projects</a>
+        </li>
+        <li className="site-links__link">
+          <a href="https://jrgriffiniii.substack.com/">Newsletter</a>
+        </li>
+        <li className="site-links__link">
+          <a href="https://www.podpage.com/politics-and-news-by-jrgriffiniii/">Podcast</a>
+        </li>
+      </ul>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug

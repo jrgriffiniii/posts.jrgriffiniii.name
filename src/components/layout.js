@@ -62,6 +62,30 @@ const Layout = ({ location, title, children }) => {
               placeholder="blurred"
             />
           </a>
+
+          <a href="https://localmonero.co/blocks">
+            <StaticImage
+              src="../images/monero.png"
+              className="footer__monero"
+              layout="fixed"
+              width={50}
+              height={50}
+              alt="Monero icon"
+              placeholder="blurred"
+            />
+          </a>
+
+          <a href="https://paynym.is">
+            <StaticImage
+              src="../images/paynym.png"
+              className="footer__paynym"
+              layout="fixed"
+              width={50}
+              height={50}
+              alt="Paynym icon"
+              placeholder="blurred"
+            />
+          </a>
         </footer>
       </div>
     </>
