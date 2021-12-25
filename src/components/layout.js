@@ -5,27 +5,18 @@ import { StaticImage } from "gatsby-plugin-image"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  let header
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
-  }
+  const header = (
+    <h1 className="main-heading">
+      <Link to="/">{title}</Link>
+    </h1>
+  )
 
   return (
     <>
+      <header className="global-header">{header}</header>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
-        <header className="global-header">{header}</header>
         <main>{children}</main>
+      </div>
         <footer className="footer">
           <a href="https://keyoxide.org/512E2A8AF3B4DE3D4163200FB673F8EB3C7B5EF1">
             <StaticImage
@@ -51,14 +42,14 @@ const Layout = ({ location, title, children }) => {
             />
           </a>
 
-          <a href="https://www.linkedin.com/in/jrgriffiniii">
+          <a href="https://tkifv7cinnoyn4edcmwsmvtg2hebhfhtenlvjczchuypsrlwdl5r6lid.onion">
             <StaticImage
-              src="../images/linkedin.png"
-              className="footer__linkedin"
+              src="../images/btcpay_server.png"
+              className="footer__btcpay_server"
               layout="fixed"
               width={50}
               height={50}
-              alt="Linkedin profile picture"
+              alt="BTCPay server icon"
               placeholder="blurred"
             />
           </a>
@@ -87,7 +78,6 @@ const Layout = ({ location, title, children }) => {
             />
           </a>
         </footer>
-      </div>
     </>
   )
 }

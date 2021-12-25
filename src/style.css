@@ -257,6 +257,8 @@ a:focus {
 .main-heading {
   font-size: var(--fontSize-7);
   margin: 0;
+  margin-top: 0rem;
+  margin-bottom: 4.2rem;
 }
 
 .post-list-item {
@@ -347,7 +349,8 @@ body {
 
 a {
   color: #af892d;
-  font-weight: 600;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 h1 {
@@ -360,40 +363,62 @@ h1 {
 
 #gatsby-focus-wrapper {
   height: inherit;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .global-wrapper {
-  height: inherit;
-
   display: flex;
   flex-direction: column;
 
   background-color: #0d2a35;
 }
 
+.main-heading {
+  margin: inherit;
+}
+
 /* Modules */
 
 /* Footer */
 .footer {
-  flex-shrink: 0;
-  margin-top: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+
+  padding: var(--spacing-6);
+
+  background-color: #222222;
+  margin-top: auto;
 }
 
 .footer .gatsby-image-wrapper {
   border-radius: 100%;
 }
 
+.footer a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 /* Heading */
+.global-header {
+  margin-bottom: 0;
+  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-6);
+  padding-left: var(--spacing-8);
+  background-color: #222222;
+}
+
 .main-heading {
-  text-align: center;
+  text-align: left;
   color: #509f98;
+  font-size: var(--fontSize-4);
 }
 
 .main-heading > a {
-  color: #509f98;
+  font-weight: 200;
+  color: #ffffff;
 }
 
 /* Bio */
@@ -407,22 +432,30 @@ h1 {
 
 .bio .author-summary {
   width: 100%;
-
-  font-weight: 600;
+  font-weight: 100;
 }
 
 /* Home */
+.global-wrapper[data-is-root-path="true"] .bio {
+  margin-bottom: 0;
+}
+
 main > .bio {
   justify-content: center;
+  margin-bottom: 0;
 }
 
 main .site-links {
   list-style: none;
   text-align: center;
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-20);
 }
 
 main .site-links .site-links__link {
   display: inline-block;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: x-large;
@@ -442,6 +475,10 @@ main .site-links .site-links__link a {
   color: #509f98;
 }
 
+.post-list-item h2 a {
+  font-weight: 700;
+}
+
 .post-list-item__description {
   font-size: larger;
   font-weight: 300;
@@ -450,12 +487,9 @@ main .site-links .site-links__link a {
 
 /* Blog post */
 
-.header-link-home::before {
-  content: "< ";
-}
-
 .blog-post header h1 {
   color: #509f98;
+  font-weight: 700;
 }
 
 .blog-post {
