@@ -32,10 +32,7 @@ const BlogIndex = ({ data, location }) => {
           <a href="https://jrgriffiniii.wordpress.com/">Projects</a>
         </li>
         <li className="site-links__link">
-          <a href="https://jrgriffiniii.substack.com/">Newsletter</a>
-        </li>
-        <li className="site-links__link">
-          <a href="https://www.podpage.com/politics-and-news-by-jrgriffiniii/">Podcast</a>
+          <a href="https://www.podpage.com/jrgriffiniii/">Podcast</a>
         </li>
       </ul>
       <ol style={{ listStyle: `none` }}>
