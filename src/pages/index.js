@@ -52,10 +52,13 @@ const BlogIndex = ({ data, location }) => {
           <p>Digital Conservator and Developer</p>
           <ul className="site-links">
             <li className="site-links__link">
-              <a href="https://www.podpage.com/jrgriffiniii/">Podcast</a>
+              <a href="https://hackaday.io/jrgriffiniii">Hackaday.io</a>
             </li>
             <li className="site-links__link">
-              <a href="https://jrgriffiniii.substack.com/">Newsletter</a>
+              <a href="https://twitch.tv">Twitch</a>
+            </li>
+            <li className="site-links__link">
+              <a href="https://tryhackme.com">TryHackMe</a>
             </li>
           </ul>
         </div>
