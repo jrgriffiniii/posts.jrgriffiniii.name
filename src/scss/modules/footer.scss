@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  padding: var(--spacing-4);
+
+  background-color: #222222;
+  margin-top: auto;
+  gap: 2.2rem;
+
+  .gatsby-image-wrapper {
+    border-radius: 100%;
+  }
+
+  a {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+
+    &:first-child {
+      margin-left: 0rem;
+    }
+
+    &:last-child {
+      margin-right: 0rem;
+    }
+  }
+}

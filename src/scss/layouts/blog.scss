@@ -1,0 +1,31 @@
+
+.blog-post {
+  font-weight: 100;
+  font-size: x-large;
+
+  header {
+    h1 {
+      color: #509f98;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 600;
+    }
+  }
+
+  &__footer {
+    font-size: large;
+
+    .bio {
+      .bio-avatar {
+        border: 0.12rem solid #ffffff;
+      }
+
+      p {
+        font-size: smaller;
+        font-weight: 900;
+      }
+    }
+  }
+}
