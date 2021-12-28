@@ -23,8 +23,8 @@ const Layout = ({ location, title, children }) => {
               src="../images/keyoxide.png"
               className="footer__keyoxide"
               layout="fixed"
-              width={50}
-              height={50}
+              width={32}
+              height={32}
               alt="Keyoxide profile picture"
               placeholder="blurred"
             />
@@ -35,8 +35,8 @@ const Layout = ({ location, title, children }) => {
               src="../images/github.png"
               className="footer__github"
               layout="fixed"
-              width={50}
-              height={50}
+              width={32}
+              height={32}
               alt="Github profile picture"
               placeholder="blurred"
             />
@@ -47,8 +47,8 @@ const Layout = ({ location, title, children }) => {
               src="../images/btcpay_server.png"
               className="footer__btcpay_server"
               layout="fixed"
-              width={50}
-              height={50}
+              width={32}
+              height={32}
               alt="BTCPay server icon"
               placeholder="blurred"
             />
@@ -59,8 +59,8 @@ const Layout = ({ location, title, children }) => {
               src="../images/monero.png"
               className="footer__monero"
               layout="fixed"
-              width={50}
-              height={50}
+              width={32}
+              height={32}
               alt="Monero icon"
               placeholder="blurred"
             />
@@ -71,8 +71,8 @@ const Layout = ({ location, title, children }) => {
               src="../images/paynym.png"
               className="footer__paynym"
               layout="fixed"
-              width={50}
-              height={50}
+              width={32}
+              height={32}
               alt="Paynym icon"
               placeholder="blurred"
             />
