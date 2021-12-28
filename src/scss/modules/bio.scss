@@ -1,0 +1,12 @@
+.bio {
+  flex-wrap: wrap;
+
+  .author-name {
+    align-self: center;
+  }
+
+  .author-summary {
+    width: 100%;
+    font-weight: 100;
+  }
+}

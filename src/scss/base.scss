@@ -1,0 +1,44 @@
+@import 'gatsby.scss';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  color: #ffffff;
+
+  background-color: #0d2a35;
+}
+
+a {
+  color: #af892d;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+h1 {
+  color: #509f98;
+}
+
+#___gatsby {
+  height: inherit;
+}
+
+#gatsby-focus-wrapper {
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.global-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #0d2a35;
+}
+
+.main-heading {
+  margin: inherit;
+}
