@@ -42,18 +42,6 @@ const Layout = ({ location, title, children }) => {
             />
           </a>
 
-          <a href="https://tkifv7cinnoyn4edcmwsmvtg2hebhfhtenlvjczchuypsrlwdl5r6lid.onion">
-            <StaticImage
-              src="../images/btcpay_server.png"
-              className="footer__btcpay_server"
-              layout="fixed"
-              width={32}
-              height={32}
-              alt="BTCPay server icon"
-              placeholder="blurred"
-            />
-          </a>
-
           <a href="https://localmonero.co/blocks">
             <StaticImage
               src="../images/monero.png"
