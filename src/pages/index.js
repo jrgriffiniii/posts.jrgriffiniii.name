@@ -49,7 +49,8 @@ const BlogIndex = ({ data, location }) => {
               </Link>
             </h2>
           </header>
-          <p>Digital Conservator and Developer</p>
+          <h3>Digital Conservator and Developer</h3>
+          <p><small>I primarily enjoy studying coding within the domain of cultural heritage and research data preservation. Outside of this, I try and study firmware, security, IoT, Bitcoin, and Monero. I am extremely supportive of privacy, and I strongly oppose censorship in all of its forms. I detest discussing politics in the workplace, and these views do not reflect those of my current or past employers.</small></p>
           <ul className="site-links">
             <li className="site-links__link">
               <a href="https://glitch.com/@jrgriffiniii">Glitch</a>
